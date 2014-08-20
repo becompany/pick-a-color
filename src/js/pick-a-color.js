@@ -3,7 +3,7 @@
 * Copyright 2013 Lauren Sperber and Broadstreet Ads
 * https://github.com/lauren/pick-a-color/blob/master/LICENSE
 */
-;(function ($) {
+define(['jquery', 'tinycolor'], function ($, tinycolor) {
     "use strict";
 
     $.fn.pickAColor = function (options) {
@@ -1180,4 +1180,4 @@
 
     };
 
-})(jQuery);
+});
