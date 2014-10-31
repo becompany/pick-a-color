@@ -35,6 +35,7 @@ define(['jquery', 'tinycolor'], function ($, tinycolor) {
         showHexInput          : true,
         allowBlank            : false,
         inlineDropdown        : false,
+        placement             : 'bottom',
         basicColors           : {
           white     : 'fff',
           red       : 'f00',
@@ -64,6 +65,9 @@ define(['jquery', 'tinycolor'], function ($, tinycolor) {
             $dropdownColorPreview = $("<span>").addClass("color-preview current-color"),
             $dropdownCaret = $("<span>").addClass("caret"),
             $dropdownContainer = $("<div>").addClass("color-menu dropdown-menu");
+        if (settings.placement === 'top') {
+          $markup.addClass("dropup");
+        }
         if (settings.inlineDropdown) {
           $dropdownContainer.addClass("color-menu--inline");
         }

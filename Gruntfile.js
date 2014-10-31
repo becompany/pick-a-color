@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'build/<%= pkg.version %>/js/<%= pkg.name %>-<%= pkg.version %>.min.js': ['src/js/<%= pkg.name %>.js'],
+          'build/js/<%= pkg.name %>.min.js': ['src/js/<%= pkg.name %>.js'],
           'docs/build/js/<%= pkg.name %>.min.js': ['src/js/<%= pkg.name %>.js']
         }
       }    },
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           paths: ["src/less/css"]
         },
         files: {
-          "build/<%= pkg.version %>/css/<%= pkg.name %>-<%= pkg.version %>.min.css": "src/less/<%= pkg.name %>.less",
+          "build/css/<%= pkg.name %>.min.css": "src/less/<%= pkg.name %>.less",
           "docs/build/css/<%= pkg.name %>.min.css": "src/less/<%= pkg.name %>.less"
         }
       }

@@ -4,8 +4,8 @@
   "description": "an easy-to-use jQuery color picker for Twitter Bootstrap",
   "version": "1.2.4",
   "main": [
-    "build/1.2.4/js/pick-a-color-1.2.4.min.js",
-    "build/1.2.4/css/pick-a-color-1.2.4.min.css"
+    "build/js/pick-a-color.min.js",
+    "build/css/pick-a-color.min.css"
   ],
   "ignore": [
     "**/.*",
